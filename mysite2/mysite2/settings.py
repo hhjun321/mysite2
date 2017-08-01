@@ -78,13 +78,11 @@ WSGI_APPLICATION = 'mysite2.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'soomcast',
-        'ENGINE': 'mysql.connector.django',
-        'USER': 'root',
-        'PASSWORD': '93115301',
-        'OPTIONS': {
-          'autocommit': True,
-        },
+    'USER': 'root',
+    'PASSWORD': '93115301',
+    'HOST': 'localhost',
     }
 }
 
