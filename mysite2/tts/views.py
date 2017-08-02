@@ -14,12 +14,14 @@ def tts_play(request):
         txt = request.GET['text']
         convert_textTomp3(txt)
         play_mp3()
+        print("done..")
         return HttpResponse('')
 
     elif request.method == 'POST':
         txt = request.GET['text']
         convert_textTomp3(txt)
         play_mp3()
+        print("done..")
         return HttpResponse('')
     
     
